@@ -1,12 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from 'react-dom'
 import './index.css'
+import App from './App'
+import { CasaProvider } from './components/context/CasaProvider'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CasaProvider>
+      <App />
+    </CasaProvider>
   </React.StrictMode>,
+  document.getElementById('root')
 )
 
 // Outlet: espacio que me permite visualizar los elementos hijos (modificables), mientras que los elementos padres estáticos

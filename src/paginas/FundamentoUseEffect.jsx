@@ -2,7 +2,7 @@ import Intro from '../components/effect/Intro'
 
 const FundamentoUseEffect = () => {
     return (
-        <Intro/>
+        <intro>Intro Effect</intro>
     )
 }
 

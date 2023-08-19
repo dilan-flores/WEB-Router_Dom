@@ -2,7 +2,7 @@ import Intro from '../components/state/Intro'
 
 const FundamentoUseState = () => {
     return (
-        <Intro/>
+        <intro>Intro State</intro>
     )
 }
 
